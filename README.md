@@ -32,7 +32,7 @@ To work with Diffusion Probabilistic Model, aside from the regular hyperparamete
 
 - `Batch size`: the number of images used for training at each iteration. I used `BATCH_SIZE=128` for the training.
 
-- `Architecture`: the architecture of the neural network used for training. I used an implementation of U-Net (#references) with ~62M parameters. I used the implementation from [this](!)
+- `Architecture`: the architecture of the neural network used for training. I used an implementation of U-Net (#references) with ~62M parameters. I used [this](!https://colab.research.google.com/drive/1sjy9odlSSy0RBVgMTgP7s99NXsqglsUL?usp=sharing) U-Net implementation
 
 
 ## Results
