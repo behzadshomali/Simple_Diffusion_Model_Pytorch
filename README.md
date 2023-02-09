@@ -1,4 +1,4 @@
-# Simple Diffusion Probabilistic Model from scratch in Pytorch
+# Simple Diffusion Probabilistic Model from scratch in PyTorch
 
 ## What is a Diffusion Probabilistic Model?
 The "diffusion model" is a computer model based on Markov chains, that is trained using a technique called variational inference. It is designed to generate samples that are similar to real data after a certain amount of time. The model learns how to undo the effects of a process called diffusion, which involves adding noise to data in a way that slowly distorts it. When the diffusion process involves small amounts of a type of noise called Gaussian noise, the model can be made simpler by using a type of neural network that uses Gaussian distributions [[1]](#references).
@@ -12,7 +12,7 @@ The "diffusion model" is a computer model based on Markov chains, that is traine
 
 
 ## What does this repository contain?
-A quite simple implementation of paper [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239.pdf). The code is written in Pytorch and is mainly inspired by [this](https://www.youtube.com/watch?v=a4Yfz2FxXiY) quick hands-on tutorial. The code is not optimized for speed and is not intended to be used for any serious application. It is just a simple implementation to get a better understanding of the paper. 
+A quite simple implementation of paper [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239.pdf). The code is written in PyTorch and is mainly inspired by [this](https://www.youtube.com/watch?v=a4Yfz2FxXiY) quick hands-on tutorial. The code is not optimized for speed and is not intended to be used for any serious application. It is just a simple implementation to get a better understanding of the paper. 
 
 I used [Oxford 102 Flower](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/) dataset containing 102 categories of flowers, each with 40 to 258 images, 8189 images in total (available in `torchvision.datasets`).
 
@@ -36,7 +36,7 @@ To work with Diffusion Probabilistic Model, aside from the regular hyperparamete
 
 
 ## Results
-The model was trained for 280 epochs on my personal computer which took roughly >22.5 hours! Despite the simple architecture and the small amount of data, and choosing T to be 350 instead of 1000 the model was able to generate images that are similar to the original images in most cases. I used [wandb](https://wandb.ai/site) to track the training process.
+The model was trained for 360 epochs on my personal computer which took roughly >24 hours! Despite the simple architecture and the small amount of data, and choosing T to be 350 instead of 1000 the model was able to generate images that are similar to the original images in most cases. I used [wandb](https://wandb.ai/site) to track the training process.
 
 <p align="center">
     <img src="images/generated_1.png", width=25%>
